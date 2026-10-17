@@ -79,4 +79,40 @@ body {
   height: 2px;
   width: 100%;
 }
+.header .links ul {
+  list-style: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  right: 0;
+  top: calc(100% + 20px);
+  min-width: 200px;
+  display: none;
+}
+.header .links:hover ul {
+  display: block;
+}
+.header .links ul::before {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  right: 5px;
+  top: -20px;
+}
+.header .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+.header .links ul li a:hover {
+  padding-left: 25px;
+}
+.header .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
 /* End Header */
