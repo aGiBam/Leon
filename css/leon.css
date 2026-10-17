@@ -1,5 +1,7 @@
 /* Start Variables */
-
+:root {
+  --main-color: #10cab7;
+}
 /* End Variables */
 /* Start Global Rules  */
 * {
@@ -11,7 +13,6 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 .container {
-  background-color: #aaa;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -89,6 +90,7 @@ body {
   top: calc(100% + 20px);
   min-width: 200px;
   display: none;
+  z-index: 1;
 }
 .header .links:hover ul {
   display: block;
@@ -97,7 +99,7 @@ body {
   content: "";
   position: absolute;
   border-width: 10px;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #ddd transparent;
   border-style: solid;
   right: 5px;
   top: -20px;
@@ -116,3 +118,31 @@ body {
   border-bottom: 1px solid #ddd;
 }
 /* End Header */
+/* Start Landing  */
+.landing {
+  position: relative;
+  background-image: url("../images/mountain.jpg");
+  background-size: cover;
+  height: calc(100vh - 100px);
+}
+.landing .intro-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 320px;
+  max-width: 100%;
+}
+.landing .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: var(--main-color);
+}
+.landing .intro-text p {
+  margin: 20px 0 0;
+  font-size: 19px;
+  line-height: 1.8;
+}
+/* End Landing  */
