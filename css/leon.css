@@ -220,39 +220,39 @@ body {
     flex-direction: column;
     text-align: center;
   }
-  .services .services-content .srv i {
-    color: var(--main-color);
-    flex-basis: 60px;
-    margin: auto;
-  }
-  .services .services-content .srv .text {
-    flex: 1;
-  }
-  .services .services-content .srv .text h3 {
-    margin: 0 0 20px;
-  }
-  .services .services-content .srv .text p {
-    color: #444;
-    font-weight: 300;
-    line-height: 1.6;
-  }
-  .services .services-content .image {
-    text-align: center;
-    position: relative;
-  }
-  .services .services-content .image::before {
-    content: "";
-    width: 100px;
-    height: calc(100% + 100px);
-    position: absolute;
-    top: -50px;
-    right: 0;
-    background-color: var(--secondary-color);
-    z-index: -1;
-  }
-  .services .services-content .image img {
-    width: 260px;
-  }
+}
+.services .services-content .srv i {
+  color: var(--main-color);
+  flex-basis: 60px;
+  margin: auto;
+}
+.services .services-content .srv .text {
+  flex: 1;
+}
+.services .services-content .srv .text h3 {
+  margin: 0 0 20px;
+}
+.services .services-content .srv .text p {
+  color: #444;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.services .services-content .image {
+  text-align: center;
+  position: relative;
+}
+.services .services-content .image::before {
+  content: "";
+  width: 100px;
+  height: calc(100% + 100px);
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background-color: var(--secondary-color);
+  z-index: -1;
+}
+.services .services-content .image img {
+  width: 260px;
 }
 @media (max-width: 1199px) {
   .image-column {
